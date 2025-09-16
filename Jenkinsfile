@@ -32,7 +32,8 @@ pipeline {
         stage('Run Frontend Tests') {
             steps {
                 dir('frontend') {
-                    bat 'npm test || echo "No frontend tests found"'
+                    // Quickest fix: pass --passWithNoTests to avoid failing when no tests exist
+                    bat 'npm test -- --passWithNoTests || echo "No frontend tests found"'
                 }
             }
         }
