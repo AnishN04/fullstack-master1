@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'test',
-                    url: 'https://github.com/ShanmukYadav/fullstack.git'
+                    url: 'https://github.com/ShanmukYadav/fullstack-master.git'
             }
         }
 
