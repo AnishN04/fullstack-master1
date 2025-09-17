@@ -1,15 +1,10 @@
 pipeline {
     agent any
-
-    tools {
-        nodejs "NodeJS"
-    }
-
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/ShanmukYadav/fullstack-master.git'
+                    url: 'hhttps://github.com/AnishN04/fullstack-master1.git'
             }
         }
 
